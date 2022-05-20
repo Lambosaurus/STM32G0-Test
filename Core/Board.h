@@ -13,6 +13,7 @@
 //#define CLK_USE_LSE
 //#define CLK_LSE_BYPASS
 //#define CLK_LSE_FREQ		32768
+#define CLK_SYSCLK_FREQ			64000000
 
 // RTC config
 //#define RTC_USE_IRQS
@@ -33,10 +34,10 @@
 //#define TIM2_ENABLE
 
 // UART config
-//#define UART1_GPIO		GPIOA
-//#define UART1_PINS		(GPIO_PIN_9 | GPIO_PIN_10)
-//#define UART1_AF		    GPIO_AF4_USART1
-//#define UART_BFR_SIZE     128
+#define UART1_GPIO			GPIOB
+#define UART1_PINS			(GPIO_PIN_6 | GPIO_PIN_7)
+#define UART1_AF			GPIO_AF0_USART1
+#define UART_BFR_SIZE     	128
 
 // SPI config
 //#define SPI1_GPIO		    GPIOB
